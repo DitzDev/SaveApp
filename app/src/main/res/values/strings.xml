@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SaveApp</string>
+    <!-- TOOLBAR --> 
+    <string name="string_action_open_menu">Open menu</string>
+    <string name="string_settings_menu">\t\tSettings</string>
 </resources>
