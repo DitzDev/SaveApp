@@ -3,5 +3,17 @@
     <string name="app_name">SaveApp</string>
     <!-- TOOLBAR --> 
     <string name="string_action_open_menu">Open menu</string>
-    <string name="string_settings_menu">\t\tSettings</string>
+    <string name="string_settings_menu">\tSettings</string>
+    <string name="string_license">\tLicense</string>
+    <!-- FRAGMENT ON PROGRESS -->
+    <string name="string_view_savings1">Savings name</string>
+    <string name="string_virw_savings2">Savings target</string>
+    <string name="string_virw_savings3">Nominal filling</string>
+    <string name="string_virw_savings4">Date created</string>
+    <string name="string_virw_savings5">Nominal collected</string>
+    <string name="string_updown1">Increase</string>
+    <string name="string_updown2">Decrease</string>
+    <string name="string_nodata_title">Looks empty here...</string>
+    <string name="string_nodata_subtitle">Let\'s start by making a plan list!</string>
+    <string name="string_fab_text">Add Plan</string>
 </resources>

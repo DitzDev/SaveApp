@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.android.gms.oss-licenses-plugin'
 }
 
 android {
@@ -42,6 +43,9 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 }
 
 dependencies {
+    implementation("com.mikhaellopez:circularprogressbar:3.1.0")
+    implementation("com.airbnb.android:lottie:6.5.2")
+    implementation("com.google.android.gms:play-services-oss-licenses:17.0.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")

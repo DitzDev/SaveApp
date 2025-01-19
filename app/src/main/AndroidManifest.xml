@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/SaveApp.AppTheme">
         <activity
-            android:name=".activity.main.SavAppMain"
+            android:name=".activity.splash.Splash"
             android:exported="true">
             <intent-filter>
                 <action
@@ -19,6 +19,9 @@
                     android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name=".activity.main.SavAppMain"
+            android:exported="false" />
         
         <activity 
             android:name=".activity.CrashActivity"

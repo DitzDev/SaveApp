@@ -1,12 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" 
-        android:text="Hello World!"/>
-</LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <!-- Summary on Top Button -->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/setSavings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/string_view_savings1"
+                    android:textSize="12dp"
+                    android:textColor="@color/blue_theme_onSurfaceVariant_highContrast"
+                    app:icon="@drawable/ic_sort"
+                    app:textAllCaps="false"
+                    app:strokeColor="?attr/colorSecondary" />
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/setViewUpDownSavings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/string_updown1"
+                    android:textSize="12dp"
+                    android:textColor="@color/blue_theme_onSurfaceVariant_highContrast"
+                    app:icon="@drawable/ic_up"
+                    app:textAllCaps="false"
+                    app:strokeColor="?attr/colorSecondary" />
+            </LinearLayout>
+            <!-- NO DATA RESPONSE -->
+            <LinearLayout
+                android:id="@+id/viewNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:visibility="visible">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_height="130dp"
+                    android:layout_width="130dp"
+                    app:lottie_rawRes="@raw/empty_animation"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/string_nodata_title"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_nodata_subtitle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:text="@string/string_fab_text"
+        app:icon="@drawable/ic_plus" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

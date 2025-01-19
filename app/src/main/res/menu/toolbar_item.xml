@@ -3,15 +3,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/menu_more"
         app:showAsAction="always"
         android:icon="@drawable/ic_more_vert"
-        android:title="@string/string_action_open_menu"
-        android:contentDescription="@string/string_action_open_menu">
+        android:title="@string/string_action_open_menu">
         <menu>
             <item
+                android:id="@+id/menu_settings"
                 app:showAsAction="never"
                 android:title="@string/string_settings_menu"
                 android:icon="@drawable/ic_settings" />
+            <item
+                android:id="@+id/menu_license"
+                app:showAsAction="never"
+                android:title="@string/string_license"
+                android:icon="@drawable/icon_license" />
         </menu>
     </item>
 </menu>
